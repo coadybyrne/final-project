@@ -1,8 +1,18 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
+$primary:       #333333;
+$secondary:     #F4CA36;
 
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+
+main {
+    background-color: $secondary !important;
+}
+
+header, footer {
+    background-color: $primary !important;
+}
