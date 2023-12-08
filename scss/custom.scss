@@ -1,7 +1,19 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
+// stylelint-disable value-keyword-case
+$font-family-base: 'Tomorrow', sans-serif;
+$headings-font-family: 'Tomorrow', sans-serif;
+
+$h1-font-size: 3.052rem;
+$h2-font-size: 2.441rem;
+$h3-font-size: 1.953rem;
+$h4-font-size: 1.563rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
 $primary:       #333333;
 $secondary:     #F4CA36;
+
 
 // Include any default variable overrides here (though functions won't be available)
 
@@ -9,10 +21,10 @@ $secondary:     #F4CA36;
 
 // Then add additional custom code here
 
-main {
-    background-color: $secondary !important;
+.color-background-yellow {
+    background-color: $secondary;
 }
 
-header, footer {
-    background-color: $primary !important;
+.card-text {
+    font-family: $font-family-base;
 }
